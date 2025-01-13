@@ -83,7 +83,7 @@ button {
         var(--neutral-dark-blue) 100%
     );
     border: 0.1px solid var(--neutral-white);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     margin: 2rem;
     padding: 2rem;
     display: flex;
@@ -116,5 +116,36 @@ button {
     button:hover {
         background-color: var(--neutral-white);
         color: var(--primary-color);
+    }
+}
+
+.greetings-container {
+    text-align: center;
+}
+
+.greeting-img {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.show-answer {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--neutral-very-dark);
+    border-radius: 1rem;
+    background-color: var(--neutral-dark-blue);
+    color: var(--primary-color);
+    font-weight: var(--weight-light);
+    &:hover {
+        font-weight: var(--weight-high);
+        background: var(--neutral-white);
+        background: linear-gradient(
+            45deg,
+            var(--neutral-white) 33%,
+            var(--neutral-dark-blue) 66%,
+            var(--neutral-very-dark) 100%
+        );
     }
 }
