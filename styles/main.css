@@ -15,10 +15,13 @@ body {
     background-color: var(--neutral-very-dark);
     font-family: var(--font-primary);
     font-size: var(--size-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    min-width: var(--mobile-size);
+    max-width: var(--mobile-size);
 }
 
 h1 {
@@ -33,17 +36,12 @@ p {
 
 .choices-container {
     margin: 0;
-}
-
-ul {
-    list-style: none;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0;
     display: flex;
     justify-content: space-around;
-    flex-wrap: initial;
-    li {
+    button {
         background-color: var(--neutral-dark-blue);
         color: var(--neutral-white);
         font-weight: var(--weight-high);
@@ -58,13 +56,15 @@ ul {
         align-items: center;
         text-align: center;
     }
-    li:hover {
-        background-color: var(--neutral-white);
-        color: var(--neutral-very-dark);
-    }
 }
 
-button {
+.choices-container button:hover,
+.choices-container button.active {
+    background-color: var(--neutral-white);
+    color: var(--neutral-very-dark);
+}
+
+.button-container button {
     background-color: var(--primary-color);
     color: var(--neutral-dark-blue);
     font-weight: var(--weight-high);
