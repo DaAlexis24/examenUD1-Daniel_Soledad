@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap");
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-dark: hsl(216, 12%, 8%);
+    --size-base: 16px;
+    --font-primary: "Overpass", serif;
+    --weight-light: 400;
+    --weight-high: 700;
+    --mobile-size: 375px;
+}
+
+body {
+    background-color: var(--neutral-very-dark);
+    font-family: var(--font-primary);
+    font-size: var(--size-base);
+    min-width: var(--mobile-size);
+}
+
+h1 {
+    font-weight: var(--weight-high);
+    color: var(--neutral-white);
+}
+
+p {
+    color: var(--neutral-dark-blue);
+    font-weight: var(--weight-light);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    li {
+        background-color: var(--neutral-dark-blue);
+        color: var(--neutral-white);
+        font-weight: var(--weight-high);
+        width: 1rem;
+        height: 1rem;
+        padding: 1rem;
+        border: 0;
+        border-radius: 50%;
+        margin: 2rem;
+        cursor: pointer;
+    }
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--neutral-dark-blue);
+    font-weight: var(--weight-high);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container,
+.greetings-container {
+    background: var(--neutral-very-dark);
+    background: linear-gradient(
+        45deg,
+        var(--neutral-very-dark) 45%,
+        var(--neutral-dark-blue) 100%
+    );
+    border: 0.1px solid var(--neutral-white);
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-initial {
+    background-color: var(--neutral-dark-blue);
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--neutral-very-dark);
+    border-radius: 50%;
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.survey-initial {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    gap: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
